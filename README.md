@@ -1,12 +1,10 @@
-# Web Developer | Java · Spring Boot · Python
+# Web Developer | Java · Spring Boot · Python · React
 
-Java / Spring Boot / Python / SQL
+Java / Spring Boot / Python(FastAPI) / React / SQL
 
-단순히 기능을 구현하는 것보다, 데이터가 어떻게 수집되고 가공되어 저장되며 사용자에게 전달되는지 전체 흐름을 고민합니다.
+단순히 기능을 구현하는 것보다, 사용자의 문제를 어떤 기능과 데이터 구조로 풀 것인지 먼저 고민합니다.
 
-기상청 관측 데이터를 활용한 데이터 파이프라인 및 웹 대시보드 프로젝트를 통해 데이터 수집부터 전처리, 적재, 시각화까지의 과정을 경험했습니다. 또한 데이터 품질 진단 프로젝트에서는 데이터의 신뢰성을 판단하는 기준을 기획하고, Spring Boot 게시판 프로젝트에서는 백엔드와 데이터베이스를 연결하는 웹서비스 개발을 익히고 있습니다.
-
-현재는 Java와 Spring Boot를 중심으로 백엔드 개발 역량을 확장하고 있으며, 사용자의 문제를 구체적인 기능으로 설계하고 안정적으로 동작하는 서비스를 만드는 개발자로 성장하고 있습니다.
+막연한 고민을 실행 단위로 쪼개 주는 서비스(한걸음), 틀린 문제를 기록하고 반복 오답을 분석하는 서비스(RepeatCut), 창업 지원사업 공고를 관리하는 게시판(공고 Tracker)을 직접 기획하고 만들었습니다. 현재는 소형 LLM을 로컬에서 돌려 쓰는 번역 웹서비스를 기획하고 있습니다.
 
 ---
 
@@ -17,23 +15,27 @@ Java / Spring Boot / Python / SQL
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=databricks&logoColor=white)
 
 ### Web & Backend
 
 ![Spring MVC](https://img.shields.io/badge/Spring_MVC-6DB33F?style=flat-square&logo=spring&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST_API-005571?style=flat-square)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-
-### Data & AI
-
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 
 ### Database
 
-![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![Flyway](https://img.shields.io/badge/Flyway-CC0200?style=flat-square&logo=flyway&logoColor=white)
+![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white)
+
+### AI
+
+![Gemini](https://img.shields.io/badge/Gemini_API-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
 
 ### Tools
 
@@ -47,151 +49,113 @@ Java / Spring Boot / Python / SQL
 
 ## Main Projects
 
-### [Weather Data Pipeline & Web Dashboard](기상청_프로젝트_[Repository_URL](https://github.com/JHKINI/kma-weather-data-pipeline))
+### [한걸음 (One-Step)](https://github.com/JHKINI/one-step)
 
-Python / Pandas / SQL / Web Dashboard
+React / Spring Boot / MySQL / Flyway / LLM
 
-기상청 관측 데이터를 활용해 데이터 수집부터 처리, 저장, 품질 확인 및 시각화까지 연결하는 데이터 파이프라인 프로젝트입니다.
-
-**주요 구현 및 경험**
-
-- 기상청 API 기반 관측 데이터 수집
-- Pandas를 활용한 데이터 전처리
-- 데이터베이스 적재 및 데이터 관리
-- 결측값, 중복, 데이터 범위 등 품질 확인
-- 데이터 파이프라인과 품질 진단 결과를 확인하는 웹 대시보드 구성
-- 수집 데이터와 처리 결과를 연결하는 데이터 흐름 설계
-
-**중점적으로 고민한 부분**
-
-- 원본 데이터와 가공 데이터의 관리 및 구분
-- 데이터 수집 과정에서 발생하는 결측 및 오류 확인
-- 데이터 처리 결과를 사용자가 이해하기 쉬운 형태로 시각화
-- 데이터 수집부터 적재까지 각 단계의 연결 구조
-
----
-
-### [Data Quality Diagnosis Project](데이터_품질_프로젝트_[Repository_URL](https://github.com/JHKINI/Data_quality_project))
-
-Python / Data Quality / Streamlit
-
-미래내일 프로젝트형 과정에서 교수님과 함께 기획한 데이터 품질 진단 프로젝트입니다.
-
-단순히 데이터를 저장하고 조회하는 것을 넘어, 데이터가 실제로 활용 가능한 신뢰성을 갖추었는지 판단할 수 있는 진단 체계를 설계하는 데 중점을 두었습니다.
+해야 할 일을 앞두고 고민만 길어져 시간을 보낸 경험에서 출발한 서비스입니다. LLM과 대화하며 막연한 고민을 바로 실행할 수 있는 작은 단위로 쪼개 주어 실행력을 높입니다. 프로젝트, 공부, 시험, 운동, 습관, 정리, 취업 준비 등 어떤 종류의 일에도 사용할 수 있습니다.
 
 **주요 구현 및 경험**
 
-- 데이터 품질 진단 서비스 기획
-- 데이터 품질 평가 항목 및 기준 설계
-- 결측률, 유효성, 일관성, 유일성 등 품질 지표 검토
-- 지표별 진단 결과를 종합적으로 확인할 수 있는 구조 설계
-- 데이터 품질 진단 결과의 시각화 및 프로토타입 구현
+- React 멀티페이지 화면 구성
+- LLM 대화 기반 추천과 실행 단위 쪼개기
+- Spring Boot 백엔드와 MySQL 연동
+- Flyway를 이용한 DB 버전 관리와 완료 기록 저장
+- 로그인 없이 기기 UUID로 사용자를 구분하는 구조
 
 **중점적으로 고민한 부분**
 
-- 주관적인 판단이 아닌 명확한 평가 기준 정의
-- 데이터 품질 지표별 계산 방식과 결과 해석
-- 진단 결과를 실제 데이터 개선으로 연결하는 방법
-- 기술적 구현과 서비스 기획 사이의 연결
+- 막연한 입력을 실행 가능한 단위로 바꾸는 대화 흐름
+- 로그인 부담 없이 기록을 이어 가는 사용자 구분 방식
+- 특정 목적에 한정되지 않는 범용적인 서비스 범위
 
 ---
 
-### [Spring Boot Notice Board](Spring_Boot_게시판_[Repository_URL](https://github.com/JHKINI/startup-notice-tracker))
+### [RepeatCut - 반복 오답 분석 서비스](https://github.com/JHKINI/RepeatCut)
 
-Java / Spring Boot / Database
+React / FastAPI / SQLite / Gemini API
 
-Java와 Spring Boot를 활용해 웹 게시판을 개발하며 백엔드의 기본 구조와 데이터 처리 과정을 익히는 프로젝트입니다.
+자격증·기출 시험에서 틀린 문제를 이미지와 함께 기록하고, 키워드·오답 이유·문제지별로 반복 오답을 분석해 학습 방법까지 추천하는 서비스입니다.
+
+**주요 구현 및 경험**
+
+- 이메일 회원가입·로그인과 회원별 데이터 분리
+- 7개 테이블 설계, `PRAGMA user_version` 기반 DB 마이그레이션
+- 시험 이름 → 유형 → 회차 순으로 고르는 선택형 입력으로 반복 입력 최소화
+- 같은 문제를 다시 틀리면 새로 등록하지 않고 시도 이력으로 누적
+- 키워드·오답 이유별 통계와 추이 그래프
+- Gemini API로 통계 기반 학습 방법 추천 (실패 시 규칙 기반 추천으로 대체)
+- 문제 이미지 파일 저장 구조 분리 (로컬 / S3 호환)
+- pytest 34개 테스트
+
+**중점적으로 고민한 부분**
+
+- 같은 문제를 판단하는 기준(문제지 + 문제 번호)과 중복 방지
+- 이미지 파일과 데이터베이스의 역할 분리
+- 회원별 데이터 분리를 SQL 조건 한 곳에서 관리하는 구조
+- AI 호출 실패 시에도 동작하는 안정적인 추천 기능
+
+---
+
+### [공고 Tracker - 창업 지원사업 공고 게시판](https://github.com/JHKINI/startup-notice-tracker)
+
+Java / Spring Boot / Thymeleaf / MySQL
+
+창업 지원사업 공고를 모아 보고 관리하는 CRUD 중심의 웹 게시판입니다. 단순한 관심 공고·마감일순 조회에서 더 나아가, 지원 진행 상태를 관리하는 기능을 더했습니다.
 
 **주요 구현 및 학습 내용**
 
 - Spring Boot 기반 웹 애플리케이션 구성
 - Controller / Service / 데이터 접근 계층의 역할 분리
-- DTO를 활용한 데이터 전달 구조
-- 데이터베이스 연동 및 SQL 처리
-- 게시글 관련 비즈니스 로직 구현
-- 예외 처리 및 요청과 응답 흐름 관리
+- Thymeleaf 화면과 MySQL 연동
+- 공고 등록·조회·수정·삭제 (CRUD)
+- 지원 상태 관리 (관심 → 준비중 → 제출완료)
 
 **중점적으로 고민한 부분**
 
-- Controller, Service, Repository/Mapper의 책임 구분
-- 비즈니스 로직과 데이터 접근 로직의 분리
+- 단순 조회와 차별화되는 "지원 관리" 중심의 기능 설계
+- 계층별 책임 구분과 유지보수를 고려한 코드 구조
 - 데이터베이스와 객체 간 매핑
-- 유지보수와 확장을 고려한 코드 구조
 
 ---
 
-### [RepeatCut - AI Wrong Answer Note](오답노트_프로젝트_[Repository_URL](https://github.com/JHKINI/RepeatCut))
+### 로컬 LLM 번역 웹서비스 (기획 중)
 
-Web / Database / AI 활용
+Python / FastAPI / Ollama / Small LLM
 
-문제와 오답을 체계적으로 관리하고 반복 학습을 지원하는 웹 기반 오답노트 서비스입니다.
+소형 LLM을 개인 PC(RTX 3080)에 내려받아 로컬에서 실행하고, 이를 이용한 번역 웹서비스를 기획하고 있습니다.
 
-기존의 단순한 오답 기록 방식에서 벗어나 문제의 출처와 분류 정보를 구조화하고, 반복적으로 틀리는 개념을 파악할 수 있는 학습 서비스를 목표로 기획하고 있습니다.
+**계획 중인 내용**
 
-**주요 기획 및 설계 내용**
+- Ollama로 소형 LLM 로컬 실행
+- FastAPI 기반 번역 API
+- 번역 웹 화면 구성
 
-- 과목, 시험 연도, 회차, 문제 번호 등 문제 메타데이터 설계
-- 문제 이미지 및 관련 자료 관리 구조
-- 문제 등록 시 이전 선택 항목을 기본값으로 활용하는 입력 UX 설계
-- 오답 이유 및 학습 상태 분류
-- 반복 오답을 확인할 수 있는 학습 이력 관리
-- OCR 및 LLM을 활용한 문제 분석 기능 검토
+**중점적으로 고민하는 부분**
 
-**중점적으로 고민한 부분**
-
-- 반복 입력을 줄이기 위한 사용자 인터페이스 설계
-- 문제, 시험 정보, 오답 이력 간 데이터 관계
-- 이미지 파일과 데이터베이스의 역할 분리
-- AI 분석 결과를 사용자 검수와 연결하는 구조
-- 실제 학습 과정에서 지속적으로 사용할 수 있는 서비스 설계
+- 10GB VRAM 환경에서 실행 가능한 모델 선택
+- 외부 API 없이 동작하는 번역 서비스의 속도와 품질
 
 ---
 
-## Team Project / Collaboration
+## Other Projects
 
-### [Vehicle License Plate Detection](차량번호판_프로젝트_[Repository_URL](https://github.com/JHKINI/nextframe_opencv))
-
-Python / OpenCV / Image Processing
-
-차량 이미지에서 번호판을 검출하는 팀 프로젝트입니다.
-
-팀장을 맡아 팀원들의 업무 진행 상황을 확인하고, 개발 과정에서 발생하는 문제를 공유하며 각 기능을 하나의 결과물로 통합하는 역할을 수행했습니다.
-
-**담당 역할 및 경험**
-
-- 팀장으로서 프로젝트 진행 및 팀원 간 소통 조율
-- 영상 및 이미지 전처리
-- 번호판 검출 기능 개발 및 결과 확인
-- GUI와 주요 기능 간 연동 및 통합
-- GitHub 기반 브랜치 관리와 코드 병합
-- 통합 테스트 및 검출 결과 검증
-
-**중점적으로 고민한 부분**
-
-- 팀원별 작업 범위와 기능 간 의존성 관리
-- 각 모듈의 결과물을 하나의 시스템으로 통합
-- Git을 활용한 작업 내용 공유 및 충돌 해결
-- 검출 성능을 확인하고 개선점을 도출하는 과정
-
-팀장 역할을 수행하며 개인의 기능 구현뿐 아니라 팀 전체의 진행 상황을 파악하고, 공동의 결과물을 완성하기 위해 소통하는 것이 중요하다는 점을 배웠습니다.
+- [Weather Data Pipeline & Web Dashboard](https://github.com/JHKINI/kma-weather-data-pipeline) : 기상청 관측 데이터 수집, 전처리, 적재, 품질 확인, 시각화
+- [Data Quality Diagnosis Project](https://github.com/JHKINI/Data_quality_project) : 데이터 품질 진단 기준 설계와 Streamlit 프로토타입
+- [Vehicle License Plate Detection](https://github.com/JHKINI/nextframe_opencv) : OpenCV 번호판 검출 팀 프로젝트 (팀장)
 
 ---
 
 ## Development Focus
 
-프로젝트를 진행하며 중점적으로 경험하고 있는 분야입니다.
-
-- **Backend Development** : Java, Spring Boot 기반 웹서비스 개발
-- **Data Processing** : API 데이터 수집, 전처리, 검증 및 적재
-- **Database Design** : 데이터 구조 설계와 관계형 데이터 관리
-- **API Integration** : 서버와 사용자 화면 간 데이터 통신
+- **Backend Development** : Java, Spring Boot, FastAPI 기반 웹서비스 개발
+- **Database Design** : 테이블 관계 설계, 마이그레이션, 회원별 데이터 분리
+- **API Integration** : 서버와 화면, 외부 AI API 간 데이터 통신
 - **Service Planning** : 사용자 요구사항을 기능과 데이터 구조로 구체화
-- **Problem Solving** : 오류 원인 분석, 검증 및 개선
+- **Problem Solving** : 오류 원인 분석, 테스트와 검증, 개선
 - **Collaboration** : Git 기반 형상 관리와 프로젝트 통합
 
-기능을 구현하는 데서 끝나지 않고, 데이터가 흐르는 구조와 서비스의 전체적인 동작 원리를 이해하는 개발자가 되고자 합니다.
-
-앞으로 Java와 Spring Boot를 중심으로 실무 역량을 강화하고, 안정적이고 확장 가능한 웹서비스를 만드는 데 기여하겠습니다.
+기능을 구현하는 데서 끝나지 않고, 서비스가 왜 필요한지와 데이터가 흐르는 구조를 함께 이해하는 개발자가 되고자 합니다.
 
 ---
 
@@ -199,4 +163,3 @@ Python / OpenCV / Image Processing
 
 - GitHub: https://github.com/JHKINI
 - Email: 38633@naver.com
-
