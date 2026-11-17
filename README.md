@@ -1,4 +1,4 @@
-# Web Developer | Java · Spring Boot · Python · React
+# AI Web Developer | Java · Spring Boot · Python · React
 
 Java / Spring Boot / Python(FastAPI) / React / SQL
 
