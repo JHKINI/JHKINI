@@ -1,4 +1,4 @@
-# AI Web Developer | Java · Spring Boot · Python · React
+# AI를 활용하고 데이터를 다루며 원하는 기능을 동작하는 서비스로 만들고 있습니다. 
 
 Java / Spring Boot / Python(FastAPI) / React / SQL
 
@@ -53,7 +53,7 @@ Java / Spring Boot / Python(FastAPI) / React / SQL
 
 ## Main Projects
 
-### [한걸음 (One-Step)](https://github.com/JHKINI/one-step)
+### [한걸음 (One-Step)](https://github.com/JHKINI/onestep-web)
 
 React / Spring Boot / MySQL / Flyway / LLM
 
@@ -155,7 +155,7 @@ Python / FastAPI / React / Ollama (qwen3.5:4b)
 ## Other Projects
 
 - [Weather Data Pipeline & Web Dashboard](https://github.com/JHKINI/kma-weather-data-pipeline) : 기상청 관측 데이터 수집, 전처리, 적재, 품질 확인, 시각화
-- [Data Quality Diagnosis Project](https://github.com/JHKINI/Data_quality_project) : 데이터 품질 진단 기준 설계와 Streamlit 프로토타입
+- [Data Quality Diagnosis Project](https://github.com/JHKINI/NSY-Data-AIDataQuality) : 데이터 품질 진단 기준 설계와 Streamlit 프로토타입
 - [Vehicle License Plate Detection](https://github.com/JHKINI/nextframe_opencv) : OpenCV 번호판 검출 팀 프로젝트 (팀장)
 
 ---
